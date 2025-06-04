@@ -7,3 +7,73 @@ Where is git used ?
     Tracking code changes
     Tracking who made changes
     Coding collaboration
+
+
+
+1. Install Git
+   - Download and install Git from the official website (https://git-scm.com/downloads) or use a package manager.
+   - Verify installation by running `git --version` in the terminal.
+2. Configure Git
+   - Set your username and email for commits:
+     ```bash
+     git config --global user.name "Your Name"
+     git config --global user.email ""
+
+3. Generate SSH Key (optional but recommended)
+   - Generate an SSH key for secure communication with remote repositories:
+     ```bash
+     ssh-keygen -t rsa -b 4096 -C ""
+    - Add the SSH key to your Git hosting service (e.g., GitHub, GitLab) by copying the public key from `~/.ssh/id_rsa.pub`.
+4. Create a New Repository
+   - Navigate to the directory where you want to create the repository:
+     ```bash
+     cd /path/to/your/project
+     ```
+   - Initialize a new Git repository:
+     ```bash
+     git init
+     ```
+   - Add files to the repository:
+     ```bash
+     git add .
+     ```
+   - Commit the changes:
+     ```bash
+     git commit -m "Initial commit"
+     ```
+5. Connect to a Remote Repository
+   - If you have a remote repository (e.g., on GitHub), add it as a remote:
+     ```bash
+     git remote add origin <repository-url>
+     ```
+   - Push the initial commit to the remote repository:
+     ```bash
+     git push -u origin master
+     ```
+6. Basic Git Commands
+   - Check the status of your repository:
+     ```bash
+     git status
+     ```
+   - View commit history:
+     ```bash
+     git log
+     ```
+   - Create a new branch:
+     ```bash
+     git checkout -b <branch-name>
+     ```
+   - Switch to an existing branch:
+     ```bash
+     git checkout <branch-name>
+     ```
+   - Merge changes from another branch:
+     ```bash
+     git merge <branch-name>
+     ```
+   - Resolve merge conflicts if they occur. 
+
+    - Delete a branch:
+      ```bash
+      git branch -d <branch-name>
+      ``` 
