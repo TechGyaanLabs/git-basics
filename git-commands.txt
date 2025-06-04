@@ -1,0 +1,15 @@
+
+clone:
+// Clones a repository into a new directory
+git clone <repository-url> [<directory>]
+
+commit:
+// Records changes to the repository
+git commit -m "<commit-message>"
+
+push:
+// Updates the remote repository with local commits
+git push [<remote>] [<branch>]
+pull:
+// Fetches and integrates changes from a remote repository
+git pull [<remote>] [<branch>]
